@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ru.sberbank.javaschool</groupId>
+    <artifactId>bank</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>core</module>
+        <module>web</module>
+        <module>auth</module>
+        <module>register</module>
+        <module>account</module>
+    </modules>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.0</version>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <properties>
+        <jdk.version>1.8</jdk.version>
+        <springframework.version>4.3.5.RELEASE</springframework.version>
+        <hibernate.version>5.1.0.Final</hibernate.version>
+        <springboot.version>1.4.2.RELEASE</springboot.version>
+        <org.thymeleaf.version>3.0.2.RELEASE</org.thymeleaf.version>
+        <org.thymeleaf.extras.springsecurity4-version>3.0.1.RELEASE</org.thymeleaf.extras.springsecurity4-version>
+        <nz.net.ultraq.thymeleaflayout.version>2.0.5</nz.net.ultraq.thymeleaflayout.version>
+        <thymeleaf-extras-java8time.version>3.0.0.RELEASE</thymeleaf-extras-java8time.version>
+        <assertj.core.version>3.5.2</assertj.core.version>
+        <fasterxml.version>2.8.5</fasterxml.version>
+        <hamcrest.version>1.3</hamcrest.version>
+        <apache.camel.version>2.18.1</apache.camel.version>
+        <org.springframework.security.oauth.version>2.0.4.RELEASE</org.springframework.security.oauth.version>
+    </properties>
+
+</project>
